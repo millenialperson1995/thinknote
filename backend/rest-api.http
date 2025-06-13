@@ -1,0 +1,23 @@
+### Get all notes
+GET http://localhost:5001/v1/api/notes
+
+
+### Create a new notes
+POST http://localhost:5001/v1/api/notes
+Content-Type: application/json
+
+{
+  "title": "JavaScript - Full Course",
+  "content": "JavaScript Crash Course for Begginning"
+}
+
+### Update a notes
+PUT http://localhost:5001/v1/api/notes/6849056298c7e068e482a762
+Content-Type: application/json
+
+{
+  "title": "Updated Board Title"
+}
+
+### Delete a notes
+DELETE http://localhost:5001/v1/api/notes/6849080d897b7be2b076236a
